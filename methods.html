@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <style>
+        .highlight
+        {
+            background-color: red;
+        }
+        .green
+        {
+            background-color: green;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <h1>JQuery Helper Methods</h1>
+    <ul>
+        <li>jquery selectors</li>
+        <li>jquery methodes</li>
+        <li>animations</li>
+    </ul>
+    <input id="ad" type="text" placeholder="fullName">
+    <input id="soyad" class="green" type="text" placeholder="LastName">
+    <button id="btnKaydet" class="btn" onclick="btnClick()">kaydet</button>
+    <img src="#" width="200">
+    <script>
+        // console.log($('h1').text());
+        // console.log($('ul').text());
+        // $('h1').text("javascript");
+
+        function btnClick(){
+            let ad = $("#ad").val();
+            let soyad = $("#soyad").val();
+            console.log(ad + soyad)
+
+            // $('#ad').addClass('highlight');
+            // // $('#soyad').removeClass("green");
+            // $('#soyad').toggleClass("green");
+            $('img').slideToggle()
+
+
+        }
+        
+        
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>jQuery</title>
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        
+    </head>
+    
+    <body>
+        <a href="#">link</a>
+        <h3 id="header">Juery Dersleri</h3>
+        <ul id="liste">
+            <li class="list">jquery reference</li>
+            <li>selectors<a href="#">link</a></li>
+            <li>jquery plugins</li>
+        </ul>
+        
+            <ul>
+            <li class="list">jquery reference</li>
+            <li>selectors<a href="#">link</a></li>
+            <li>jquery plugins</li>
+        </ul>
+        
+        <script>
+            
+            document.getElementById('header').style.color="red"
+            
+            $("#header").css("color","blue")
+            
+            $("#liste a").css("text-decoration", "none")
+            $("a").css("text-decoration", "none")
+            
+            var styles=
+                {
+                    color:"yellow",
+                    fontSize:"20px",
+                    border:"1px solid red"
+                }
+            $("ul li").css(styles);
+            
+            $("a").css({
+                    color:"red",
+                    fontSize:"20px",
+                    border:"1px solid red"
+            })
+            
+            
+            
+            
+            
+            
+            
+        
+
+        </script>
+        
+    </body>
+
+
+
+
+
+
+
+
+
+
+</html>

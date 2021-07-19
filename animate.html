@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <style>
+        #box
+        {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="animate">animate</button>
+    <div id="box">
+        merhaba
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('#animate').click(function(){
+                var box = $('#box');
+                box.animate({
+                left: '200px',
+                widht: '300px',
+                height: '500px'
+            },'slow',
+            //  function(){
+            //      alert("animation stopped")
+            //  }
+             ); 
+             box.animate({
+                 fontSize: '90px'
+             }, 3000);
+            });
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>

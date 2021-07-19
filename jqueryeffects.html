@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <p>Sıfırdan web geliştirme dersleri1</p>
+    <button id="hide" class="btn">hide</button>
+    <button id="show"  class="btn">show</button>
+    <button id="toggle"  class="btn">toggle</button>
+    <button id="fade"  class="btn">fade</button>
+
+    <script>
+        $(document).ready(function(){
+
+            $("#hide").click(function(){
+                $("p").hide("slow");
+            });
+            $("#show").click(function(){
+                $("p").show("fast", function(){
+                    alert("paragraf gösterildi")
+                });
+            });
+            $("#toggle").click(function(){
+                $("p").toggle("slow");
+            });
+            $("#fade").click(function(){
+                $("p").fadeToggle("slow");
+            });
+            
+            
+            
+        })
+
+    </script>
+
+</body>
+
+</html>

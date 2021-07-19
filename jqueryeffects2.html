@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <p>Sıfırdan web geliştirme dersleri1</p>
+    <button id="slideup" class="btn">slide up</button>
+    <button id="slidedown"  class="btn">slide down</button>
+    <button id="toggle"  class="btn">toggle</button>
+    <button id="fadein"  class="btn">fadein</button>
+    <button id="fadeout"  class="btn">fadeout</button>
+    <button id="fadeTo"  class="btn">fadeTo</button>
+    <button id="fadeToggle"  class="btn">fadeToggle</button>
+    <script>
+        $(document).ready(function(){
+
+            $("#slideup").click(function(){
+                $("p").slideUp("slow");
+            });
+            $("#slidedown").click(function(){
+                $("p").slideDown("fast", function(){
+                    alert("paragraf gösterildi")
+                });
+            });
+            $("#toggle").click(function(){
+                $("p").slideToggle("slow");
+            });
+            $("#fadein").click(function(){
+                $("p").fadeIn("slow");
+            });
+            $("#fadeout").click(function(){
+                $("p").fadeOut("slow");
+            });
+            $("#fadeTo").click(function(){
+                $("p").fadeTo("slow", 0.5);
+            });
+            $("#fadeToggle").click(function(){
+                $("p").fadeToggle("slow");
+            });
+            
+            
+        })
+
+    </script>
+
+</body>
+
+</html>
